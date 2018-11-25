@@ -45,14 +45,13 @@ def draw(deck, numCards):
 	return drawnCards
 
 # Returns the numarical value for a card
-# Returns a negative 1 for an ace, since it could be either 1 or 10
 def value(cardId):
 	# 2-10 are just the face value
 	if cardId[:-1].isdigit():
 		return int(cardId[:-1])
 
 	# All royal cards are worth 10
-	return 10 if cardId[0] in ["J", "Q", "K"] else -1
+	return 10 if cardId[0] in ["J", "Q", "K"] else 11
 
 
 # Run the file directly to use this for testing
