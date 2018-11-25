@@ -1,0 +1,36 @@
+import module
+def printStuff(stuff):
+    print(stuff)
+
+class TestClass:
+    def __init__(self,num1,num2):
+        self.a = num1
+        self.b = num2
+        self.sum = num1 + num2
+
+print("hello world")
+print "helloworld"
+printStuff("helloz")
+
+object = TestClass(1.03,2)
+print(object.sum)
+
+object.sum = module.moduleFunction(object.sum)
+print(object.sum)
+
+print(module.__name__)
+
+y = abs(-10.2)
+print(y)
+
+import sys
+print(sys.path[0])
+
+print(sys.argv[0])
+
+#print(module.__dict__)
+
+my_list = [10,20,30]
+print(id(my_list))
+my_list[0] = 40
+print(id(my_list))
